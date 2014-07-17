@@ -14,7 +14,6 @@ function repeat(operation, num) {
 }
     
 module.exports = repeat;
-**/
 
 function doubleAll(numbers) {
     return numbers.map(function(number) {
@@ -23,3 +22,14 @@ function doubleAll(numbers) {
 }
     
 module.exports = doubleAll;
+**/
+
+function getShortMessages(messages) {
+    return messages.filter(function(messObj) {
+        return messObj.message.length < 50;
+    }).map(function(message) {
+        return message.message;
+    });        
+}
+    
+module.exports = getShortMessages;
