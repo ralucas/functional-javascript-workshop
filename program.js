@@ -4,7 +4,6 @@ function upperCaser(input) {
 }
     
 module.exports = upperCaser;
-**/
 
 function repeat(operation, num) {
     while(num > 0) {
@@ -15,3 +14,12 @@ function repeat(operation, num) {
 }
     
 module.exports = repeat;
+**/
+
+function doubleAll(numbers) {
+    return numbers.map(function(number) {
+       return number*2;
+    });
+}
+    
+module.exports = doubleAll;
